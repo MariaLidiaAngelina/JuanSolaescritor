@@ -1,0 +1,80 @@
+.medios {
+    background-color: $patagonia;
+
+    h1 {
+        font-family: handlock;
+        text-align: center;
+        margin-bottom: 0 !important;
+        font-size: 35px;
+        letter-spacing: 2px;
+        border-bottom: black solid 2px;
+        text-decoration: none;
+    }
+}
+/* Medios */
+.main-medios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: var(--grid-column-gap, 30px);
+    grid-row-gap: var(--grid-row-gap, 30px);
+    justify-items: center;
+    padding: 20px 0px;
+}
+
+.main-medios div {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+.contiene-medios {width: 655px;
+    flex-direction: row;
+   
+}
+
+.contiene-medios div { align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.contiene-medios div img {height: 150px;
+    
+}
+
+.link-medios {background-color: white;
+    width: 400px;
+    height: 100px;
+    border-radius: 0px 10px 10px 0px;
+   
+   
+}
+
+.link-medios button {
+    align-self: center;
+    border-color: #4097b2;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px 3px;
+    border-radius: 10px;
+    background-color: #4097b2;
+    color: beige;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+}
+
+.imagen-medios {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.link-medios p {
+    color: black;
+    padding: 5px 5px;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    text-align: justify;
+    text-decoration: none;
+    font-size: smaller;
+    margin-bottom: 0;
+}

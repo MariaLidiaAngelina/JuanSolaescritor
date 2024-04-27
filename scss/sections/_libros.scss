@@ -1,0 +1,158 @@
+.libros {
+    background-color: $futuro;
+
+    h1 {
+        font-family: handlock;
+        text-align: center;
+        margin-bottom: 0 !important;
+        font-size: 35px;
+        letter-spacing: 2px;
+        border-bottom: black solid 2px;
+        text-decoration: none;
+    }
+}
+.main-libros {
+    display: flex;
+
+}
+
+h4{
+    margin-bottom: 0;
+   font-weight: bold;
+    font-size: 1rem;
+}
+.tap-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Mulish", sans-serif;
+    /* eje vertical, eje horizontal, difuminado, extensión */
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.534);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.button {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #e3a42a;
+    color: beige;
+    font-family: "Mulish", sans-serif;
+}
+
+.tap-li img {
+    height: 250px;
+    ;
+    margin: 10px;
+
+}
+p{
+    margin-bottom: 0;
+}
+/* Grid libros por areas */
+.grid-libros {
+    background-color: #d9d9d9;
+    display: grid;
+    width: 1200px;
+    grid-template-areas:
+        "libr1 libr2 libr2"
+        "libr3 libr3 libr4"
+        "libr5 libr6 libr6"
+        "libr7 libr7 libr8"
+        "libr9 libr0 libr0"
+        "li8r1 li8r1 li8r2"
+        "li8r3 li8r4 li8r4 "
+    ;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.libr1 {
+    grid-area: libr1;
+    padding: 10px;
+    width: 250px;
+}
+
+.libr2 {
+    grid-area: libr2;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr3 {
+    grid-area: libr3;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr4 {
+    grid-area: libr4;
+    padding: 10px;
+    width: 250px;
+
+}
+
+.libr5 {
+    grid-area: libr5;
+    padding: 20px;
+    width: 250px;
+}
+
+.libr6 {
+    grid-area: libr6;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr7 {
+    grid-area: libr7;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr8 {
+    grid-area: libr8;
+    padding: 20px;
+    width: 250px;
+}
+
+.libr9 {
+    grid-area: libr9;
+    padding: 20px;
+    width: 250px;
+}
+
+.libr0 {
+    grid-area: libr0;
+    padding: 20px;
+    width: 310px;
+}
+
+.li8r1 {
+    grid-area: li8r1;
+    padding: 20px;
+    width: 310px;
+}
+
+.li8r2 {
+    grid-area: li8r2;
+    padding: 20px;
+    width: 250px;
+}
+
+
+.li8r3 {
+    grid-area: li8r3;
+    padding: 20px;
+    width: 250px;
+}
+
+.li8r4 {
+    grid-area: li8r4;
+    padding: 20px;
+    width: 310px;
+}

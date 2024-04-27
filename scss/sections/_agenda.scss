@@ -1,0 +1,85 @@
+.agenda {
+    background-color: $bosque;
+
+    h1 {
+        font-family: handlock;
+        text-align: center;
+        margin-bottom: 0 !important;
+        font-size: 35px;
+        letter-spacing: 2px;
+        border-bottom: black solid 2px;
+        text-decoration: none;
+    }
+}
+
+
+.main-agenda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: baseline;
+}
+
+.grid-agenda {
+    display: grid;
+    grid-template-areas:
+        "evento1 evento1 evento1"
+        "evento2 evento3 evento3"
+        "evento4 evento3 evento3"
+        "evento4 evento3 evento3"
+    ;
+    grid-template-rows: 50px 150px 100px 100px;
+    grid-template-columns: 250px 150px 150px;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.534);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.main-agenda h2{
+    font-weight: bolder;
+    font-size: larger;
+}
+.evento-proximo {
+    grid-area: evento1;
+    padding: 10px;
+}
+
+.ubicacion {
+    padding: 10px;
+    grid-area: evento2;
+}
+
+.fotoevento {
+    padding: 10px;
+    grid-area: evento3;
+}
+
+.mapaevento {
+    grid-area: evento4;
+}
+.mapaevento iframe{
+    border-radius: 10px;
+}
+.fotoevento img {
+    width: 80%;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-variant: small-caps;
+    margin-bottom: 0;
+ 
+}
+
+.eventos-pasados a {
+    text-decoration: none;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-variant: small-caps;
+}
