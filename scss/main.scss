@@ -1,0 +1,653 @@
+//Utilidades
+@import'./utilities/colors'
+@import'./utilities/reset';
+//Secciones
+@import './sections/header';
+/* Tipografías */
+@font-face {
+    font-family: handlock;
+    src: url("../resources/typo/tomnr.ttf");
+}
+
+/* Si quiero fuente de google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap');
+
+/* font-family: "Mulish", sans-serif;
+font-family: "Noto Sans Gurmukhi", sans-serif;
+*/
+
+
+/* Los menú de navegación y generales*/
+
+/* Bootstrap */
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.1 5.5rem !important;
+  }
+  .navbar>.container-fluid{
+     font-family: "Noto Sans Gurmukhi", sans-serif;
+  }
+  .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #4097b2 !important;
+    justify-content: space-evenly;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-size: small;
+  }
+  .navbar-brand {
+    font-size: small;
+    padding: 1px;
+  }
+  .container-fluid a:hover {
+    background-color: #7ed9ee !important;
+    border-radius: 10px;
+}
+ i{
+    font-size: 23px;
+    color: #e3a42a;
+ }
+
+  .navbar-collapse{
+    justify-content: center;
+  }
+
+.textos {
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    color: black;
+    font-size: 1.0em;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    text-decoration: none;
+}
+
+
+main {
+    background-color: #d9d9d9;
+}
+
+/* Inicio */
+.inicio {
+    background-color: #edd971;
+}
+
+.main-inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-inicio article {
+    max-width: auto;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: end;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.presentacion div img {
+    border-radius: 50%;
+    width: 500px;
+    justify-items: end;
+    box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+    border: black solid 2px;
+}
+
+.presentacion div p {
+    margin: 20px;
+    justify-content: flex-start;
+}
+
+h3 {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4097b2;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+}
+
+.venta {
+    display: grid;
+    background-color: #edd971;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    justify-content: center;
+    justify-items: start;
+}
+
+.describe {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4097b2;
+    letter-spacing: 2px;
+    font-size: large;
+    height: min-content;
+    display: inline-block;
+    padding: 20px 50px;
+    width: 50%;
+
+}
+
+.venta div {
+    display: flex;
+    flex-direction: column;
+}
+
+.venta div p {
+    align-self: flex-end;
+}
+
+/* Agenda */
+.agenda {
+    background-color: #4eaa94;
+}
+
+.main-agenda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: baseline;
+}
+
+.grid-agenda {
+    display: grid;
+    grid-template-areas:
+        "evento1 evento1 evento1"
+        "evento2 evento3 evento3"
+        "evento4 evento3 evento3"
+        "evento4 evento3 evento3"
+    ;
+    grid-template-rows: 50px 150px 100px 100px;
+    grid-template-columns: 250px 150px 150px;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.534);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.main-agenda h2{
+    font-weight: bolder;
+    font-size: larger;
+}
+.evento-proximo {
+    grid-area: evento1;
+    padding: 10px;
+}
+
+.ubicacion {
+    padding: 10px;
+    grid-area: evento2;
+}
+
+.fotoevento {
+    padding: 10px;
+    grid-area: evento3;
+}
+
+.mapaevento {
+    grid-area: evento4;
+}
+.mapaevento iframe{
+    border-radius: 10px;
+}
+.fotoevento img {
+    width: 80%;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-variant: small-caps;
+    margin-bottom: 0;
+ 
+}
+
+.eventos-pasados a {
+    text-decoration: none;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-variant: small-caps;
+}
+
+/* Medios */
+.medios {
+    background-color: #4097b2;
+}
+
+.main-medios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: var(--grid-column-gap, 30px);
+    grid-row-gap: var(--grid-row-gap, 30px);
+    justify-items: center;
+    padding: 20px 0px;
+}
+
+.main-medios div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contiene-medios {
+    width: 655px;
+    flex-direction: row;
+}
+
+.contiene-medios div {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contiene-medios div img {
+    height: 150px;
+}
+
+.link-medios {
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    border-radius: 0px 10px 10px 0px;
+   
+}
+
+.link-medios button {
+    align-self: center;
+    border-color: #4097b2;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px 3px;
+    border-radius: 10px;
+    background-color: #4097b2;
+    color: beige;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+}
+
+.imagen-medios {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.link-medios p {
+    color: black;
+    padding: 5px 5px;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    text-align: justify;
+    text-decoration: none;
+    font-size: smaller;
+    margin-bottom: 0;
+}
+
+/* Contacto */
+.logoinsta {
+    width: 40px;
+    height: 40px;
+}
+
+.contacto {
+    background-color: #4bcbe8;
+}
+
+.main-contacto {
+    display: flex;
+}
+
+.div-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.img-contacto {
+
+    width: 40%;
+}
+
+.contact-form {
+    display: flex;
+    margin-top: 12%;
+    margin-left: 20%;
+}
+
+.contact-ig {
+
+    display: flex;
+    height: 10%;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 45%;
+
+    ::first-letter {
+        font-weight: bold;
+
+    }
+}
+
+.contact-ig a {
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    color: black;
+    font: size 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #4097b2;
+    border-radius: 4px;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #4097b2;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Libros 2 */
+.libros {
+    background-color: #e3a42a;
+}
+
+.main-libros {
+    display: flex;
+
+}
+
+h4{
+    margin-bottom: 0;
+   font-weight: bold;
+    font-size: 1rem;
+}
+.tap-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Mulish", sans-serif;
+    /* eje vertical, eje horizontal, difuminado, extensión */
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.534);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.button {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #e3a42a;
+    color: beige;
+    font-family: "Mulish", sans-serif;
+}
+
+.tap-li img {
+    height: 250px;
+    ;
+    margin: 10px;
+
+}
+p{
+    margin-bottom: 0;
+}
+/* Grid libros por areas */
+.grid-libros {
+    background-color: #d9d9d9;
+    display: grid;
+    width: 1200px;
+    grid-template-areas:
+        "libr1 libr2 libr2"
+        "libr3 libr3 libr4"
+        "libr5 libr6 libr6"
+        "libr7 libr7 libr8"
+        "libr9 libr0 libr0"
+        "li8r1 li8r1 li8r2"
+        "li8r3 li8r4 li8r4 "
+    ;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.libr1 {
+    grid-area: libr1;
+    padding: 10px;
+    width: 250px;
+}
+
+.libr2 {
+    grid-area: libr2;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr3 {
+    grid-area: libr3;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr4 {
+    grid-area: libr4;
+    padding: 10px;
+    width: 250px;
+
+}
+
+.libr5 {
+    grid-area: libr5;
+    padding: 20px;
+    width: 250px;
+}
+
+.libr6 {
+    grid-area: libr6;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr7 {
+    grid-area: libr7;
+    padding: 20px;
+    width: 310px;
+}
+
+.libr8 {
+    grid-area: libr8;
+    padding: 20px;
+    width: 250px;
+}
+
+.libr9 {
+    grid-area: libr9;
+    padding: 20px;
+    width: 250px;
+}
+
+.libr0 {
+    grid-area: libr0;
+    padding: 20px;
+    width: 310px;
+}
+
+.li8r1 {
+    grid-area: li8r1;
+    padding: 20px;
+    width: 310px;
+}
+
+.li8r2 {
+    grid-area: li8r2;
+    padding: 20px;
+    width: 250px;
+}
+
+
+.li8r3 {
+    grid-area: li8r3;
+    padding: 20px;
+    width: 250px;
+}
+
+.li8r4 {
+    grid-area: li8r4;
+    padding: 20px;
+    width: 310px;
+}
+
+/*Responsive */
+/* Mobile last=> max-width  */
+/* Tablet */
+@media (max-width:838px) {
+    .main-inicio article {
+        flex-direction: row-reverse;
+    }
+
+    .presentacion {
+        display: grid;
+        grid-template-columns: 2fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+
+    .presentacion div img {
+        border-radius: 50%;
+        width: 70%;
+            }
+
+    .presentacion div p {
+        margin: 5px;
+        order: 1;
+    }
+
+    .describe {
+        width: auto;
+    }
+
+    .venta {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width:655px) {
+
+    /* Grid libros por areas */
+    .grid-libros {
+        background-color: #d9d9d9;
+        display: grid;
+        width: 80%;
+        grid-template-areas:
+            "libr1"
+            "libr2 "
+            "libr4"
+            "libr3"
+            "libr5"
+            "libr6 "
+            "libr8"
+            "libr7"
+            "libr9"
+            "libr0 "
+            "li8r2"
+            "li8r1"
+            "li8r3"
+            "li8r4"
+        ;
+        align-items: center;
+        justify-items: center;
+        justify-content: start;
+    }
+
+
+    .grid-agenda {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .main-medios div {
+        flex-direction: column;
+    }
+
+    .contiene-medios {
+        width: 320px;
+    }
+.imagen-medios{
+    border-radius: 10px 10px 0px 0px;
+}
+    .link-medios {
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        height: 130px;
+       flex-direction: column; 
+    }
+
+    .main-contacto {
+        background-image: url("../resources/juanPiletaCielo.jpeg");
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+            "logo-insta"
+            "form-news "
+    }
+
+    .img-contacto {
+        width: 60%;
+        grid-area: img-pileta;
+    }
+
+    .contact-ig {
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        grid-area: logo-insta;
+    }
+
+    .contact-form {
+        grid-area: form-news;
+        margin-left: auto;
+    }
+
+    .contact-form p {
+        font-family: "Noto Sans Gurmukhi", sans-serif;
+        color: black;
+        font: size 1em;
+        text-align: center;
+        text-decoration: none;
+    }
+}
