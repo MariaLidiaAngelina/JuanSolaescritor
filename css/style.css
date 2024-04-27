@@ -1,5 +1,13 @@
 @charset "UTF-8";
+/* Tipografías */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap");
+@font-face {
+  font-family: handlock;
+  src: url("../resources/typo/tomnr.ttf"); }
+
+/* Si quiero fuente de google font */
+/* font-family: "Mulish", sans-serif;
+font-family: "Noto Sans Gurmukhi", sans-serif;*/
 * {
   margin: 0;
   padding: 0;
@@ -533,14 +541,6 @@ input[type=reset] {
   margin: 4px 2px;
   cursor: pointer; }
 
-/* Tipografías */
-@font-face {
-  font-family: handlock;
-  src: url("../resources/typo/tomnr.ttf"); }
-
-/* Si quiero fuente de google font */
-/* font-family: "Mulish", sans-serif;
-font-family: "Noto Sans Gurmukhi", sans-serif;*/
 .textos {
   font-family: "Noto Sans Gurmukhi", sans-serif;
   color: black;

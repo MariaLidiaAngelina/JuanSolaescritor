@@ -1,5 +1,6 @@
 //Variables-->reseteo
 @import'./utilities/colors';
+@import'./utilities/fonts';
 @import'./utilities/reset';
 //Secciones
 @import './sections/header';
@@ -8,18 +9,6 @@
 @import'./sections/agenda';
 @import'./sections/medios';
 @import'./sections/contacto';
-/* Tipografías */
-@font-face {
-    font-family: handlock;
-    src: url("../resources/typo/tomnr.ttf");
-}
-
-/* Si quiero fuente de google font */
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap');
-
-/* font-family: "Mulish", sans-serif;
-font-family: "Noto Sans Gurmukhi", sans-serif;*/
 
 .textos {
     font-family: "Noto Sans Gurmukhi", sans-serif;
@@ -33,7 +22,6 @@ font-family: "Noto Sans Gurmukhi", sans-serif;*/
 main {
     background-color: #d9d9d9;
 }
-
 /*Responsive */
 /* Mobile last=> max-width  */
 /* Tablet */
@@ -41,7 +29,6 @@ main {
     .main-inicio article {
         flex-direction: row-reverse;
     }
-
     .presentacion {
         display: grid;
         grid-template-columns: 2fr;
@@ -49,10 +36,7 @@ main {
         justify-content: center;
         align-items: center;
         overflow: hidden;
-
     }
-
-
     .presentacion div img {
         border-radius: 50%;
         width: 70%;
@@ -62,11 +46,9 @@ main {
         margin: 5px;
         order: 1;
     }
-
     .describe {
         width: auto;
     }
-
     .venta {
         grid-template-columns: 1fr;
         align-items: center;
@@ -74,10 +56,8 @@ main {
         justify-items: center;
     }
 }
-
 /* Mobile */
 @media (max-width:655px) {
-
     /* Grid libros por areas */
     .grid-libros {
         background-color: #d9d9d9;
@@ -103,21 +83,16 @@ main {
         justify-items: center;
         justify-content: start;
     }
-
-
     .grid-agenda {
         display: flex;
         flex-direction: column;
         width: 80%;
         align-items: center;
         justify-content: center;
-
     }
-
     .main-medios div {
         flex-direction: column;
     }
-
     .contiene-medios {
         width: 320px;
     }
@@ -131,7 +106,6 @@ main {
         height: 130px;
        flex-direction: column; 
     }
-
     .main-contacto {
         background-image: url("../resources/juanPiletaCielo.jpeg");
         display: grid;
@@ -140,24 +114,20 @@ main {
             "logo-insta"
             "form-news "
     }
-
     .img-contacto {
         width: 60%;
         grid-area: img-pileta;
     }
-
     .contact-ig {
         height: auto;
         width: auto;
         margin-left: auto;
         grid-area: logo-insta;
     }
-
     .contact-form {
         grid-area: form-news;
         margin-left: auto;
     }
-
     .contact-form p {
         font-family: "Noto Sans Gurmukhi", sans-serif;
         color: black;
