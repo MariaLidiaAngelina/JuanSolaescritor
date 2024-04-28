@@ -4,7 +4,8 @@
 /* Tablet */
 @media (max-width:838px) {
     .main-inicio article {
-        flex-direction: row-reverse;
+        
+        grid-template-columns: 2fr;
     }
     .presentacion {
         display: grid;

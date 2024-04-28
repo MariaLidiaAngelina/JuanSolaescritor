@@ -188,7 +188,7 @@ i {
       box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
       border: black solid 2px; }
     .main-inicio article div p {
-      margin: 20px;
+      margin: 5px;
       justify-content: flex-start; }
 
 .venta {
@@ -519,7 +519,7 @@ input[type=reset] {
 /* Tablet */
 @media (max-width: 838px) {
   .main-inicio article {
-    flex-direction: row-reverse; }
+    grid-template-columns: 2fr; }
   .presentacion {
     display: grid;
     grid-template-columns: 2fr;
