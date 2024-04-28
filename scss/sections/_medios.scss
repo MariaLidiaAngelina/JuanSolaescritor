@@ -2,13 +2,7 @@
     background-color: $patagonia;
 
     h1 {
-        font-family: handlock;
-        text-align: center;
-        margin-bottom: 0 !important;
-        font-size: 35px;
-        letter-spacing: 2px;
-        border-bottom: black solid 2px;
-        text-decoration: none;
+        @extend .titulo-h1
     }
 }
 /* Medios */
