@@ -72,8 +72,16 @@ h2 {
  
 }
 
-.eventos-pasados a {
-    text-decoration: none;
-    font-family: "Noto Sans Gurmukhi", sans-serif;
-    font-variant: small-caps;
+.eventos-pasados{ display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+        font-family: "Noto Sans Gurmukhi", sans-serif;
+        font-variant: small-caps;
+
+} 
 }

@@ -225,7 +225,9 @@ i {
   background-color: #e3a42a; }
 
 .main-libros {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 h4 {
   margin-bottom: 0;
@@ -383,10 +385,17 @@ h2 {
   font-variant: small-caps;
   margin-bottom: 0; }
 
-.eventos-pasados a {
-  text-decoration: none;
-  font-family: "Noto Sans Gurmukhi", sans-serif;
-  font-variant: small-caps; }
+.eventos-pasados {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .eventos-pasados a {
+    text-decoration: none;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-variant: small-caps; }
 
 .medios {
   background-color: #4097b2; }
