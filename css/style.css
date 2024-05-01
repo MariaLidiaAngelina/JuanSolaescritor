@@ -460,57 +460,52 @@ p {
 
 .main-contacto {
   display: flex; }
-
-.div-contacto {
-  display: flex;
-  flex-direction: column;
-  width: 40%; }
-
-.img-contacto {
-  width: 40%; }
-
-.contact-form {
-  display: flex;
-  margin-top: 12%;
-  margin-left: 20%; }
-
-.contact-ig {
-  display: flex;
-  height: 10%;
-  width: 50%;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  align-items: center;
-  margin-top: 20%;
-  margin-left: 45%; }
-  .contact-ig ::first-letter {
-    font-weight: bold; }
-
-.contact-ig a {
-  font-family: "Noto Sans Gurmukhi", sans-serif;
-  color: black;
-  font: size 1em;
-  text-align: center;
-  text-decoration: none; }
-
-form input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #4097b2;
-  border-radius: 4px; }
-
-input[type=submit],
-input[type=reset] {
-  background-color: #4097b2;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer; }
+  .main-contacto .img-contacto {
+    width: 40%; }
+  .main-contacto .div-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center; }
+    .main-contacto .div-contacto .contact-ig {
+      display: flex;
+      height: 10%;
+      width: 50%;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      align-items: center;
+      margin-top: 10%; }
+      .main-contacto .div-contacto .contact-ig a {
+        font-family: "Noto Sans Gurmukhi", sans-serif;
+        color: black;
+        font-size: smaller;
+        text-align: center;
+        text-decoration: none; }
+      .main-contacto .div-contacto .contact-ig ::first-letter {
+        font-weight: bold; }
+    .main-contacto .div-contacto .contact-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12%;
+      margin-left: 20%; }
+      .main-contacto .div-contacto .contact-form form input {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #4097b2;
+        border-radius: 4px; }
+      .main-contacto .div-contacto .contact-form input[type=submit],
+      .main-contacto .div-contacto .contact-form input[type=reset] {
+        background-color: #4097b2;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer; }
 
 /*Responsive */
 /* Mobile last=> max-width  */
