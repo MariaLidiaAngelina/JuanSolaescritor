@@ -89,38 +89,44 @@
     }
 
     .main-contacto {
+
+        img{
+            display: none;
+        }
+        
+        .div-contacto{
+            width: 100%;
         background-image: url("../resources/juanPiletaCielo.jpeg");
         display: grid;
         justify-items: center;
         grid-template-areas:
             "logo-insta"
-            "form-news "
-    }
+            "form-news ";
 
-    .img-contacto {
-        width: 60%;
-        grid-area: img-pileta;
-    }
-
-    .contact-ig {
-        height: auto;
-        width: auto;
-        margin-left: auto;
-        grid-area: logo-insta;
-    }
-
-    .contact-form {
-        grid-area: form-news;
-        margin-left: auto;
-    }
-
-    .contact-form p {
-        font-family: "Noto Sans Gurmukhi", sans-serif;
-        color: black;
-        font: size 1em;
-        text-align: center;
-        text-decoration: none;
-    }
+            .contact-ig {
+                img{
+                    display: flex;
+                }
+                height: auto;
+                width: auto;
+                grid-area: logo-insta;
+               
+            }
+        
+            .contact-form {
+                grid-area: form-news;
+                p {
+                    font-family: $fuente-sinserifa;
+                    color: black;
+                    font-size: 1em;
+                    text-align: left;
+                    text-decoration: none;
+                }
+            
+            }
+        
+            
+    }}
 
 
 .main-agenda {
