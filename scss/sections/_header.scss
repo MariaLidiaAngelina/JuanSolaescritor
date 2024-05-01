@@ -1,21 +1,21 @@
 header {
 
-    nav .bg-body-tertiary {
+ nav .bg-body-tertiary {
         --bs-bg-opacity: 1;
         background-color: #4097b2 !important;
         justify-content: space-evenly;
-        font-family: "Noto Sans Gurmukhi", sans-serif;
+        font-family: $fuente-sinserifa;
         font-size: small;
 
         div {
             display: flex;
-            font-family: "Noto Sans Gurmukhi", sans-serif;
+            font-family:$fuente-sinserifa;
             justify-content: center;
 
             a { text-decoration: none;
                 i {
                     font-size: 23px;
-                    color: #e3a42a;
+                    color:$futuro;
                 }
             }
 
@@ -37,7 +37,7 @@ header {
                     flex-wrap: wrap;
                     list-style-type: none;
                     overflow: hidden;
-                    background-color: #4097b2;
+                    background-color:$patagonia;
 
                     li {
                         float: left;
@@ -49,9 +49,9 @@ header {
                             text-align: center;
                             padding: 14px 0px;
                             text-decoration: none;
-                            font-family: "Mulish", sans-serif;
+                            font-family: $fuente-sinserifa2;
                             font-size: small;
-                            background: #4097b2;
+                            background: $patagonia;
                         }
 
                     }
@@ -63,7 +63,7 @@ header {
     }
 
     marquee {
-        font-family: handlock;
+        font-family: $fuente-serifada;
         font-size: larger;
         font-weight: lighter;
         letter-spacing: 5px;
@@ -71,12 +71,10 @@ header {
         text-transform: uppercase;
 
     }
-
-   a{ text-decoration: none;
+  
     h1 {
         @extend .titulo-h1
-
-    }}
+    }
 }
 footer{
   position: static;
@@ -84,19 +82,21 @@ footer{
   bottom: 0%;
   text-align: center;
   list-style-type: none;
-  background-color: #4eaa94;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: $bosque;
+  font-family:$fuente-sinserifa2;
   font-size: small;
-    nav{
-        ul{ list-style-type: none;
+    nav {display: flex;
+        justify-content: center;
+               ul{ list-style-type: none;
             overflow: hidden;
-            background-color: #4eaa94;
+            background-color:$bosque;
             display: flex;
+            flex-wrap: wrap;
             color: black;
             text-align: center;
             padding: 12px 70px;
             text-decoration: none;
-            font-family: "Mulish", sans-serif;
+            font-family: $fuente-sinserifa2;
             font-size: small;
             border: none; 
             justify-content: center;
@@ -108,14 +108,14 @@ footer{
                     text-align: center;
                     padding: 12px 30px;
                     text-decoration: none;
-                    font-family: "Mulish", sans-serif;
+                    font-family: $fuente-sinserifa2;
                     font-size: small;
                     border: 0cm;
-                    background-color: #4eaa94;
+                    background-color:$bosque;
                 }
                 a:hover {
                     text-decoration: none;
-                    background-color: #4eaa94;
+                    background-color:$bosque;
                     opacity: 0.5; }
             }
         }

@@ -3,7 +3,7 @@
     font-family: handlock;
     src: url("../resources/typo/tomnr.ttf");
 }
-/* Si quiero fuente de google font */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap');
-/* font-family: "Mulish", sans-serif;
-font-family: "Noto Sans Gurmukhi", sans-serif;*/
+$fuente-serifada: handlock;
+$fuente-sinserifa: "Noto Sans Gurmukhi", sans-serif;
+$fuente-sinserifa2:  "Mulish", sans-serif;

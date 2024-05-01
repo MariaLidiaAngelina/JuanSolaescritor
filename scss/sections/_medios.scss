@@ -53,7 +53,7 @@
     border-radius: 10px;
     background-color: #4097b2;
     color: beige;
-    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-family: $fuente-sinserifa;
 }
 
 .imagen-medios {
@@ -66,7 +66,7 @@
 .link-medios p {
     color: black;
     padding: 5px 5px;
-    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-family: $fuente-sinserifa;
     text-align: justify;
     text-decoration: none;
     font-size: smaller;
