@@ -35,6 +35,9 @@ main {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px; }
+  .tap-li:hover {
+    transform: scale(0.95);
+    transition: 3s; }
 
 .describe {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -182,7 +185,7 @@ footer {
         opacity: 0.5; }
 
 .inicio {
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
+  background-color: #edd971; }
 
 .main-inicio {
   display: flex;
@@ -201,13 +204,18 @@ footer {
       justify-items: end;
       box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
       border: black solid 2px; }
+      .main-inicio article img:hover {
+        transform: scale(0.95);
+        transition: 3s; }
     .main-inicio article div p {
       margin: 5px;
       justify-content: flex-start; }
+      .main-inicio article div p:hover {
+        transform: scale(0.95);
+        transition: 3s; }
 
 .venta {
   display: grid;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   grid-template-columns: 2fr 1fr;
   align-items: start;
   justify-content: center;
@@ -357,6 +365,9 @@ p {
     border-radius: 10px;
     padding: 10px;
     margin: 10px; }
+    .main-agenda .grid-agenda:hover {
+      transform: scale(0.95);
+      transition: 3s; }
     .main-agenda .grid-agenda .evento-proximo {
       grid-area: evento1;
       padding: 10px; }
@@ -406,6 +417,9 @@ p {
 .contiene-medios {
   width: 655px;
   flex-direction: row; }
+  .contiene-medios:hover {
+    transform: scale(0.95);
+    transition: 3s; }
 
 .contiene-medios div {
   align-content: center;
@@ -475,6 +489,9 @@ p {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       align-items: center;
       margin-top: 10%; }
+      .main-contacto .div-contacto .contact-ig:hover {
+        transform: scale(0.95);
+        transition: 3s; }
       .main-contacto .div-contacto .contact-ig a {
         font-family: "Noto Sans Gurmukhi", sans-serif;
         color: black;

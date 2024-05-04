@@ -1,8 +1,6 @@
 .inicio {
-    // background-color: $sol;
-    // background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    h1 {
+     background-color: $sol;
+        h1 {
         @extend .titulo-h1
     }
 }
@@ -26,6 +24,10 @@
             justify-items: end;
             box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
             border: black solid 2px;
+            &:hover{
+                transform: scale(0.95);
+                transition: 3s;
+            }
         }
 
 
@@ -33,6 +35,10 @@
             p {
                 margin: 5px;
                 justify-content: flex-start;
+                &:hover{
+                    transform: scale(0.95);
+                    transition: 3s;
+                }
             }
         }
     }
@@ -40,10 +46,6 @@
 
 .venta {
     display: grid;
-    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-    // background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    // background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    // background-color:$sol;
     grid-template-columns: 2fr 1fr;
     align-items: start;
     justify-content: center;
@@ -55,7 +57,7 @@
 
         h3 {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            color: #4097b2;
+            color: $patagonia;
             letter-spacing: 3px;
             text-align: center;
             padding: 20px;

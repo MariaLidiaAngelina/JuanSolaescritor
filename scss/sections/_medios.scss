@@ -24,6 +24,10 @@
 
 .contiene-medios {width: 655px;
     flex-direction: row;
+    &:hover{
+        transform: scale(0.95);
+        transition: 3s;
+    }
    
 }
 

@@ -32,7 +32,10 @@ main {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
-    
+    &:hover{
+        transform: scale(0.95);
+        transition: 3s;
+    }
 }
 .describe{
     font-family: Georgia, 'Times New Roman', Times, serif;

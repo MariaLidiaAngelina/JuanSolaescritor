@@ -20,6 +20,10 @@
     }
 
     .grid-agenda {
+        &:hover{
+            transform: scale(0.95);
+            transition: 3s;
+        }
         display: grid;
         grid-template-areas:
             "evento1 evento1 evento1"
