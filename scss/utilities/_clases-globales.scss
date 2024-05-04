@@ -19,8 +19,7 @@
 
 main {
     background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-        // background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    // background-color: #d9d9d9;
+     
 }
 .tap-li {
     display: flex;
@@ -34,7 +33,7 @@ main {
     margin-bottom: 10px;
     &:hover{
         transform: scale(0.95);
-        transition: 3s;
+        transition: 3s ease-in-out;
     }
 }
 .describe{
@@ -48,44 +47,38 @@ main {
             width: 50%;
 }
 //bootstrap
-
-.navbar>.container-fluid {
-    font-family:$fuente-sinserifa;
-}
-
-
-.navbar-nav {
-    --bs-nav-link-padding-x: 0;
-    --bs-nav-link-padding-y: 0.1 5.5rem !important;
-}
-
-
-.bg-body-tertiary {
+nav .navbar .navbar-expand-lg .bg-body-tertiary .justify-content-center{
     --bs-bg-opacity: 1;
     background-color:$patagonia !important;
     justify-content: space-evenly;
-    font-family:$fuente-sinserifa;
+    font-family:$fuente-serifada;
     font-size: small;
-}
-
-.navbar-brand {
-    font-size: small;
-    padding: 1px;
-}
-
-.container-fluid a:hover {
-    background-color: #7ed9ee !important;
-    border-radius: 10px;
-}
-
-i {
+    font-weight: bold;
+    div .container-fluid{ font-family:$fuente-sinserifa;
+        a .navbar-brand{
+            i{
+                
     font-size: 23px;
     color:$futuro;
-}
+            }
+            font-size: small;
+            padding: 1px;
+            &:hover{
+                background-color: #7ed9ee !important;
+                border-radius: 10px;
+            }
+        }
+        div .collapse .navbar-collapse .justify-content-center{
+            justify-content: center;
+            ul .navbar-nav .nav .justify-content-center{
+                --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.1 5.5rem !important;
+            }
 
-.navbar-collapse {
-    justify-content: center;
-}
+        }
+
+    }
+
 
 h2 {
     font-size: 15px;

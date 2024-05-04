@@ -37,7 +37,7 @@ main {
   margin-bottom: 10px; }
   .tap-li:hover {
     transform: scale(0.95);
-    transition: 3s; }
+    transition: 3s ease-in-out; }
 
 .describe {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -48,6 +48,30 @@ main {
   display: inline-block;
   padding: 20px 50px;
   width: 50%; }
+
+nav .navbar .navbar-expand-lg .bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #4097b2 !important;
+  justify-content: space-evenly;
+  font-family: handlock;
+  font-size: small;
+  font-weight: bold; }
+  nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid {
+    font-family: "Noto Sans Gurmukhi", sans-serif; }
+    nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid a .navbar-brand {
+      font-size: small;
+      padding: 1px; }
+      nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid a .navbar-brand i {
+        font-size: 23px;
+        color: #e3a42a; }
+      nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid a .navbar-brand:hover {
+        background-color: #7ed9ee !important;
+        border-radius: 10px; }
+    nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid div .collapse .navbar-collapse .justify-content-center {
+      justify-content: center; }
+      nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid div .collapse .navbar-collapse .justify-content-center ul .navbar-nav .nav .justify-content-center {
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0.1 5.5rem !important; }
 
 .navbar > .container-fluid {
   font-family: "Noto Sans Gurmukhi", sans-serif; }
@@ -60,8 +84,9 @@ main {
   --bs-bg-opacity: 1;
   background-color: #4097b2 !important;
   justify-content: space-evenly;
-  font-family: "Noto Sans Gurmukhi", sans-serif;
-  font-size: small; }
+  font-family: handlock;
+  font-size: small;
+  font-weight: bold; }
 
 .navbar-brand {
   font-size: small;
@@ -206,13 +231,13 @@ footer {
       border: black solid 2px; }
       .main-inicio article img:hover {
         transform: scale(0.95);
-        transition: 3s; }
+        transition: 3s ease-in-out; }
     .main-inicio article div p {
       margin: 5px;
       justify-content: flex-start; }
       .main-inicio article div p:hover {
         transform: scale(0.95);
-        transition: 3s; }
+        transition: 3s ease-in-out; }
 
 .venta {
   display: grid;
@@ -367,7 +392,7 @@ p {
     margin: 10px; }
     .main-agenda .grid-agenda:hover {
       transform: scale(0.95);
-      transition: 3s; }
+      transition: 3s ease-in-out; }
     .main-agenda .grid-agenda .evento-proximo {
       grid-area: evento1;
       padding: 10px; }
@@ -419,7 +444,7 @@ p {
   flex-direction: row; }
   .contiene-medios:hover {
     transform: scale(0.95);
-    transition: 3s; }
+    transition: 3s ease-in-out; }
 
 .contiene-medios div {
   align-content: center;
@@ -491,7 +516,7 @@ p {
       margin-top: 10%; }
       .main-contacto .div-contacto .contact-ig:hover {
         transform: scale(0.95);
-        transition: 3s; }
+        transition: 3s ease-in-out; }
       .main-contacto .div-contacto .contact-ig a {
         font-family: "Noto Sans Gurmukhi", sans-serif;
         color: black;

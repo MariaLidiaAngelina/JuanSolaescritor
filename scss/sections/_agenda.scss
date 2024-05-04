@@ -22,7 +22,7 @@
     .grid-agenda {
         &:hover{
             transform: scale(0.95);
-            transition: 3s;
+            transition: 3s ease-in-out;
         }
         display: grid;
         grid-template-areas:
