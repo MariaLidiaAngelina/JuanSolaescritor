@@ -39,8 +39,7 @@ p{
 }
 /* Grid libros por areas */
 .grid-libros {
-    background-color: #d9d9d9;
-    display: grid;
+     display: grid;
     width: 1200px;
     grid-template-areas:
         "libr1 libr2 libr2"

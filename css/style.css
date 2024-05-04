@@ -23,7 +23,7 @@
   text-decoration: none; }
 
 main {
-  background-color: #d9d9d9; }
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); }
 
 .tap-li {
   display: flex;
@@ -182,7 +182,7 @@ footer {
         opacity: 0.5; }
 
 .inicio {
-  background-color: #edd971; }
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); }
 
 .main-inicio {
   display: flex;
@@ -207,7 +207,7 @@ footer {
 
 .venta {
   display: grid;
-  background-color: #edd971;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   grid-template-columns: 2fr 1fr;
   align-items: start;
   justify-content: center;
@@ -255,7 +255,6 @@ p {
 
 /* Grid libros por areas */
 .grid-libros {
-  background-color: #d9d9d9;
   display: grid;
   width: 1200px;
   grid-template-areas: "libr1 libr2 libr2" "libr3 libr3 libr4" "libr5 libr6 libr6" "libr7 libr7 libr8" "libr9 libr0 libr0" "li8r1 li8r1 li8r2" "li8r3 li8r4 li8r4 ";
