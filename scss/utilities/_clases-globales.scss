@@ -1,11 +1,11 @@
-.titulo-h1{
+.titulo-h1 {
     font-family: $fuente-serifada;
-        text-align: center;
-        margin-bottom: 0 !important;
-        font-size: 35px;
-        letter-spacing: 2px;
-        border-bottom: black solid 2px;
-        text-decoration: none;
+    text-align: center;
+    margin-bottom: 0 !important;
+    font-size: 35px;
+    letter-spacing: 2px;
+    border-bottom: black solid 2px;
+    text-decoration: none;
 }
 
 .textos {
@@ -19,8 +19,9 @@
 
 main {
     background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-     
+
 }
+
 .tap-li {
     display: flex;
     flex-direction: column;
@@ -31,58 +32,104 @@ main {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
-    &:hover{
+
+    &:hover {
         transform: scale(0.95);
         transition: 3s ease-in-out;
     }
 }
-.describe{
+
+.describe {
     font-family: Georgia, 'Times New Roman', Times, serif;
-            color: $patagonia;
-            letter-spacing: 2px;
-            font-size: large;
-            height: min-content;
-            display: inline-block;
-            padding: 20px 50px;
-            width: 50%;
+    color: $patagonia;
+    letter-spacing: 2px;
+    font-size: large;
+    height: min-content;
+    display: inline-block;
+    padding: 20px 50px;
+    width: 50%;
 }
+
 //bootstrap
-nav .navbar .navbar-expand-lg .bg-body-tertiary .justify-content-center{
-    --bs-bg-opacity: 1;
-    background-color:$patagonia !important;
-    justify-content: space-evenly;
-    font-family:$fuente-serifada;
-    font-size: small;
-    font-weight: bold;
-    div .container-fluid{ font-family:$fuente-sinserifa;
-        a .navbar-brand{
-            i{
-                
-    font-size: 23px;
-    color:$futuro;
-            }
-            font-size: small;
-            padding: 1px;
-            &:hover{
-                background-color: #7ed9ee !important;
-                border-radius: 10px;
-            }
-        }
-        div .collapse .navbar-collapse .justify-content-center{
-            justify-content: center;
-            ul .navbar-nav .nav .justify-content-center{
-                --bs-nav-link-padding-x: 0;
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.1 5.5rem !important;
-            }
+  }
+  .navbar>.container-fluid{
+     font-family: "Noto Sans Gurmukhi", sans-serif;
+  }
+  .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #4097b2 !important;
+    justify-content: space-evenly;
+    font-family: "Noto Sans Gurmukhi", sans-serif;
+    font-size: small;
+  }
+  .navbar-brand {
+    font-size: small;
+    padding: 1px;
+  }
+  .container-fluid a:hover {
+    background-color: #7ed9ee !important;
+    border-radius: 10px;
+}
+i{
+    font-size: 23px;
+    color: #e3a42a;
+}
 
-        }
+  .navbar-collapse{
+    justify-content: center;
+  }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4097b2
+}
+
+li {
+    float: left;
+    margin-left: 0px;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+    font-size: small;
+    background: #4097b2;
+}
+
+li a:hover {
+    background-color: #4bcbe8;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+    h2 {
+        font-size: 15px;
+        font-family: $fuente-sinserifa;
+        font-variant: small-caps;
+        margin-bottom: 0;
     }
 
-
-h2 {
-    font-size: 15px;
-    font-family: $fuente-sinserifa;
-    font-variant: small-caps;
-    margin-bottom: 0;
-}
+    
+@keyframes scrolling {
+    0% {transform: translateX(100%)} ;
+    50% {transform: translateX(0)} ;
+      100% { transform: translateX(-100%) };
+      }
+  

@@ -87,14 +87,16 @@ footer{
   font-size: small;
     nav {display: flex;
         justify-content: center;
-               ul{ list-style-type: none;
+        margin: 0%;
+               ul{ margin: 0%;
+                list-style-type: none;
             overflow: hidden;
             background-color:$bosque;
             display: flex;
             flex-wrap: wrap;
             color: black;
             text-align: center;
-            padding: 12px 70px;
+            padding: 7px 70px;
             text-decoration: none;
             font-family: $fuente-sinserifa2;
             font-size: small;
@@ -106,7 +108,7 @@ footer{
                     display: inline-block;
                     color: black;
                     text-align: center;
-                    padding: 12px 30px;
+                    padding: 7px 30px;
                     text-decoration: none;
                     font-family: $fuente-sinserifa2;
                     font-size: small;
@@ -121,3 +123,10 @@ footer{
         }
     }
 }
+
+footer .lapicera {
+    animation: scrolling 20s linear infinite;
+    animation-direction: reverse;
+    i{color: black;
+        font-size: 1em;}
+        }

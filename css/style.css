@@ -49,44 +49,19 @@ main {
   padding: 20px 50px;
   width: 50%; }
 
-nav .navbar .navbar-expand-lg .bg-body-tertiary {
-  --bs-bg-opacity: 1;
-  background-color: #4097b2 !important;
-  justify-content: space-evenly;
-  font-family: handlock;
-  font-size: small;
-  font-weight: bold; }
-  nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid {
-    font-family: "Noto Sans Gurmukhi", sans-serif; }
-    nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid a .navbar-brand {
-      font-size: small;
-      padding: 1px; }
-      nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid a .navbar-brand i {
-        font-size: 23px;
-        color: #e3a42a; }
-      nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid a .navbar-brand:hover {
-        background-color: #7ed9ee !important;
-        border-radius: 10px; }
-    nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid div .collapse .navbar-collapse .justify-content-center {
-      justify-content: center; }
-      nav .navbar .navbar-expand-lg .bg-body-tertiary div .container-fluid div .collapse .navbar-collapse .justify-content-center ul .navbar-nav .nav .justify-content-center {
-        --bs-nav-link-padding-x: 0;
-        --bs-nav-link-padding-y: 0.1 5.5rem !important; }
-
-.navbar > .container-fluid {
-  font-family: "Noto Sans Gurmukhi", sans-serif; }
-
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.1 5.5rem !important; }
+
+.navbar > .container-fluid {
+  font-family: "Noto Sans Gurmukhi", sans-serif; }
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
   background-color: #4097b2 !important;
   justify-content: space-evenly;
-  font-family: handlock;
-  font-size: small;
-  font-weight: bold; }
+  font-family: "Noto Sans Gurmukhi", sans-serif;
+  font-size: small; }
 
 .navbar-brand {
   font-size: small;
@@ -103,11 +78,51 @@ i {
 .navbar-collapse {
   justify-content: center; }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #4097b2; }
+
+li {
+  float: left;
+  margin-left: 0px; }
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: small;
+  background: #4097b2; }
+
+li a:hover {
+  background-color: #4bcbe8; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
 h2 {
   font-size: 15px;
   font-family: "Noto Sans Gurmukhi", sans-serif;
   font-variant: small-caps;
   margin-bottom: 0; }
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%); }
+  50% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
 
 * {
   margin: 0;
@@ -177,8 +192,10 @@ footer {
   font-size: small; }
   footer nav {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0%; }
     footer nav ul {
+      margin: 0%;
       list-style-type: none;
       overflow: hidden;
       background-color: #4eaa94;
@@ -186,7 +203,7 @@ footer {
       flex-wrap: wrap;
       color: black;
       text-align: center;
-      padding: 12px 70px;
+      padding: 7px 70px;
       text-decoration: none;
       font-family: "Mulish", sans-serif;
       font-size: small;
@@ -198,7 +215,7 @@ footer {
         display: inline-block;
         color: black;
         text-align: center;
-        padding: 12px 30px;
+        padding: 7px 30px;
         text-decoration: none;
         font-family: "Mulish", sans-serif;
         font-size: small;
@@ -208,6 +225,13 @@ footer {
         text-decoration: none;
         background-color: #4eaa94;
         opacity: 0.5; }
+
+footer .lapicera {
+  animation: scrolling 20s linear infinite;
+  animation-direction: reverse; }
+  footer .lapicera i {
+    color: black;
+    font-size: 1em; }
 
 .inicio {
   background-color: #edd971; }
