@@ -538,7 +538,6 @@ p {
 @media (max-width: 655px) {
   /* Grid libros por areas */
   .grid-libros {
-    background-color: #d9d9d9;
     display: grid;
     width: 80%;
     grid-template-areas: "libr1" "libr2 " "libr4" "libr3" "libr5" "libr6 " "libr8" "libr7" "libr9" "libr0 " "li8r2" "li8r1" "li8r3" "li8r4";
