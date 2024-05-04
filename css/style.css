@@ -14,9 +14,6 @@
   border-bottom: black solid 2px;
   text-decoration: none; }
 
-.favicon {
-  color: #e3a42a; }
-
 .textos {
   font-family: "Noto Sans Gurmukhi", sans-serif;
   color: black;
@@ -231,7 +228,8 @@ footer {
 
 footer .lapicera {
   animation: scrolling 20s linear infinite;
-  animation-direction: reverse; }
+  animation-direction: reverse;
+  width: 50%; }
   footer .lapicera i {
     color: black;
     font-size: 1em; }
