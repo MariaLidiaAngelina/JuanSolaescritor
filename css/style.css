@@ -41,7 +41,7 @@ main {
 
 .describe {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #4097b2;
+  color: #4097b2ed;
   letter-spacing: 2px;
   font-size: large;
   height: min-content;
@@ -162,7 +162,7 @@ header nav .bg-body-tertiary {
         flex-wrap: wrap;
         list-style-type: none;
         overflow: hidden;
-        background-color: #4097b2; }
+        background-color: #4097b2ed; }
         header nav .bg-body-tertiary div div ul li {
           float: left;
           margin-left: 0px; }
@@ -174,7 +174,7 @@ header nav .bg-body-tertiary {
             text-decoration: none;
             font-family: "Mulish", sans-serif;
             font-size: small;
-            background: #4097b2; }
+            background: #4097b2ed; }
 
 header marquee {
   font-family: handlock;
@@ -280,7 +280,7 @@ footer .lapicera {
     flex-direction: column; }
     .venta div h3 {
       font-family: Georgia, 'Times New Roman', Times, serif;
-      color: #4097b2;
+      color: #4097b2ed;
       letter-spacing: 3px;
       text-align: center;
       padding: 20px;
@@ -452,7 +452,7 @@ p {
       font-variant: small-caps; }
 
 .medios {
-  background-color: #4097b2; }
+  background-color: #4097b2ed; }
 
 /* Medios */
 .main-medios {
@@ -517,14 +517,14 @@ p {
 
 /* Contacto */
 .contacto {
-  background-color: #4bcbe8; }
+  background-color: #4bcbe8df; }
 
 .logoinsta {
   width: 40px;
   height: 40px; }
 
 .contacto {
-  background-color: #4bcbe8; }
+  background-color: #4bcbe8df; }
 
 .main-contacto {
   display: flex; }
