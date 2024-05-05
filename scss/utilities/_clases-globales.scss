@@ -68,15 +68,18 @@ main {
   .navbar-brand {
     font-size: small;
     padding: 1px;
-  }
+    display: flex;
+      }
   .container-fluid a:hover {
     background-color: #7ed9ee !important;
     border-radius: 10px;
 }
 i{
-    font-size: 23px;
+    font-size: 18px;
     color: #e3a42a;
-}
+    font-family: $fuente-sinserifa;
+    font-style: normal;
+    }
 
   .navbar-collapse{
     justify-content: center;

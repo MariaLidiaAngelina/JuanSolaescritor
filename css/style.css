@@ -65,15 +65,18 @@ main {
 
 .navbar-brand {
   font-size: small;
-  padding: 1px; }
+  padding: 1px;
+  display: flex; }
 
 .container-fluid a:hover {
   background-color: #7ed9ee !important;
   border-radius: 10px; }
 
 i {
-  font-size: 23px;
-  color: #e3a42a; }
+  font-size: 18px;
+  color: #e3a42a;
+  font-family: "Noto Sans Gurmukhi", sans-serif;
+  font-style: normal; }
 
 .navbar-collapse {
   justify-content: center; }
@@ -144,7 +147,7 @@ header nav .bg-body-tertiary {
       text-decoration: none; }
       header nav .bg-body-tertiary div a i {
         font-size: 23px;
-        color: #e3a42a; }
+        color: #ce9523; }
     header nav .bg-body-tertiary div a:hover {
       background-color: #7ed9ee !important;
       border-radius: 10px; }
@@ -225,6 +228,8 @@ footer {
         text-decoration: none;
         background-color: #4eaa94;
         opacity: 0.5; }
+  footer .decoration {
+    text-decoration: overline; }
 
 footer .lapicera {
   animation: scrolling 20s linear infinite;
@@ -235,7 +240,7 @@ footer .lapicera {
     font-size: 1em; }
 
 .inicio {
-  background-color: #edd971; }
+  background-color: #f2d17c; }
 
 .main-inicio {
   display: flex;
@@ -284,7 +289,7 @@ footer .lapicera {
       align-self: flex-end; }
 
 .libros {
-  background-color: #e3a42a; }
+  background-color: #ce9523; }
 
 .main-libros {
   display: flex;
