@@ -70,3 +70,34 @@
            }
     }
 }
+.acerca-de{
+    max-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    div{
+        display:grid;
+        justify-items: start;
+      
+        h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: $patagonia;
+            letter-spacing: 3px;
+            text-align: center;
+            padding: 20px;
+           
+            
+        }
+       
+            p { 
+                justify-content: flex-start;
+                margin: 5px;
+                justify-content: flex-start;
+                }
+            }
+        
+   
+}

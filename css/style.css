@@ -47,7 +47,7 @@ main {
   height: min-content;
   display: inline-block;
   padding: 20px 50px;
-  width: 50%; }
+  width: 80%; }
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
@@ -288,6 +288,28 @@ footer .lapicera {
     .venta div p {
       align-self: flex-end; }
 
+.acerca-de {
+  max-width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .acerca-de div {
+    display: grid;
+    justify-items: start; }
+    .acerca-de div h3 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #4097b2ed;
+      letter-spacing: 3px;
+      text-align: center;
+      padding: 20px; }
+    .acerca-de div p {
+      justify-content: flex-start;
+      margin: 5px;
+      justify-content: flex-start; }
+
 .libros {
   background-color: #ce9523; }
 
@@ -446,10 +468,16 @@ p {
     align-content: center;
     justify-content: center;
     align-items: center; }
-    .main-agenda .eventos-pasados a {
-      text-decoration: none;
-      font-family: "Noto Sans Gurmukhi", sans-serif;
-      font-variant: small-caps; }
+    .main-agenda .eventos-pasados div {
+      height: 250px;
+      width: 255px; }
+      .main-agenda .eventos-pasados div img {
+        width: 150px;
+        height: 200px; }
+      .main-agenda .eventos-pasados div a {
+        text-decoration: none;
+        font-family: "Noto Sans Gurmukhi", sans-serif;
+        font-variant: small-caps; }
 
 .medios {
   background-color: #4097b2ed; }
