@@ -628,6 +628,31 @@ p {
     order: 1; }
   .describe {
     width: auto; }
+  .acerca-de {
+    max-width: auto;
+    display: grid;
+    grid-template-columns: 2fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px; }
+    .acerca-de div {
+      display: grid;
+      justify-items: center; }
+      .acerca-de div h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #4097b2ed;
+        letter-spacing: 3px;
+        text-align: center;
+        padding: 10px; }
+      .acerca-de div img {
+        width: 250px;
+        height: 150px; }
+      .acerca-de div p {
+        justify-content: flex-start;
+        margin: 5px;
+        justify-content: flex-start; }
   .venta {
     grid-template-columns: 1fr;
     align-items: center;

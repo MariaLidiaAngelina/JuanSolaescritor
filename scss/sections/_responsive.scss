@@ -29,7 +29,41 @@
     .describe {
         width: auto;
     }
-
+    .acerca-de{
+        max-width: auto;
+        display: grid;
+        grid-template-columns: 2fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 20px;
+        div{
+            display:grid;
+            justify-items: center;
+          
+            h3 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: $patagonia;
+                letter-spacing: 3px;
+                text-align: center;
+                padding: 10px;
+               
+                
+            }
+           img{
+            width: 250px;
+            height: 150px;
+           }
+                p { 
+                    justify-content: flex-start;
+                    margin: 5px;
+                    justify-content: flex-start;
+                    }
+                }
+            
+       
+    }
     .venta {
         grid-template-columns: 1fr;
         align-items: center;
