@@ -44,7 +44,7 @@ main {
 
 .describe {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #4097b2ed;
+  color: #A67D32;
   letter-spacing: 2px;
   font-size: large;
   height: min-content;
@@ -143,7 +143,7 @@ header {
   z-index: 3; }
   header nav .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #4097b2 !important;
+    background-color: #A67D32  !important;
     justify-content: space-evenly;
     font-family: "Noto Sans Gurmukhi", sans-serif;
     font-size: small; }
@@ -155,7 +155,7 @@ header {
         text-decoration: none; }
         header nav .bg-body-tertiary div a i {
           font-size: 23px;
-          color: #ce9523; }
+          color: #F28A2E; }
       header nav .bg-body-tertiary div a:hover {
         background-color: #7ed9ee !important;
         border-radius: 10px; }
@@ -170,7 +170,7 @@ header {
           flex-wrap: wrap;
           list-style-type: none;
           overflow: hidden;
-          background-color: #4097b2ed; }
+          background-color: #A67D32; }
           header nav .bg-body-tertiary div div ul li {
             float: left;
             margin-left: 0px; }
@@ -182,7 +182,7 @@ header {
               text-decoration: none;
               font-family: "Mulish", sans-serif;
               font-size: small;
-              background: #4097b2ed; }
+              background: #A67D32; }
   header marquee {
     font-family: handlock;
     font-size: 18px;
@@ -198,7 +198,7 @@ footer {
   bottom: 0%;
   text-align: center;
   list-style-type: none;
-  background-color: #4eaa94;
+  background-color: #BF4E24;
   font-family: "Mulish", sans-serif;
   font-size: small; }
   footer nav {
@@ -209,7 +209,7 @@ footer {
       margin: 0%;
       list-style-type: none;
       overflow: hidden;
-      background-color: #4eaa94;
+      background-color: #BF4E24;
       display: flex;
       flex-wrap: wrap;
       color: black;
@@ -231,10 +231,10 @@ footer {
         font-family: "Mulish", sans-serif;
         font-size: small;
         border: 0cm;
-        background-color: #4eaa94; }
+        background-color: #BF4E24; }
       footer nav ul li a:hover {
         text-decoration: none;
-        background-color: #4eaa94;
+        background-color: #BF4E24;
         opacity: 0.5; }
   footer .decoration {
     text-decoration: overline; }
@@ -248,7 +248,7 @@ footer .lapicera {
     font-size: 1em; }
 
 .inicio {
-  background-color: #f2d17c; }
+  background-color: #F2D8A7; }
 
 .main-inicio {
   display: flex;
@@ -288,7 +288,7 @@ footer .lapicera {
     flex-direction: column; }
     .venta div h3 {
       font-family: Georgia, 'Times New Roman', Times, serif;
-      color: #4097b2ed;
+      color: #A67D32;
       letter-spacing: 3px;
       text-align: center;
       padding: 20px;
@@ -309,7 +309,7 @@ footer .lapicera {
     justify-items: start; }
     .acerca-de div h3 {
       font-family: Georgia, 'Times New Roman', Times, serif;
-      color: #4097b2ed;
+      color: #A67D32;
       letter-spacing: 3px;
       text-align: center;
       padding: 20px; }
@@ -319,7 +319,7 @@ footer .lapicera {
       justify-content: flex-start; }
 
 .libros {
-  background-color: #ce9523; }
+  background-color: #F28A2E; }
 
 .main-libros {
   display: flex;
@@ -427,7 +427,7 @@ p {
   width: 310px; }
 
 .agenda {
-  background-color: #4eaa94; }
+  background-color: #BF4E24; }
 
 .main-agenda {
   display: flex;
@@ -495,7 +495,7 @@ p {
         font-variant: small-caps; }
 
 .medios {
-  background-color: #b53e56; }
+  background-color: #BF4E24; }
 
 /* Medios */
 .main-medios {
@@ -577,7 +577,7 @@ p {
   justify-content: center;
   min-height: 100vh; }
   .main-contacto .img-contacto {
-    margin-top: 118px;
+    margin-top: 108px;
     width: 40%; }
   .main-contacto .div-contacto {
     margin-top: 150px;
@@ -680,7 +680,7 @@ p {
       justify-items: center; }
       .acerca-de div h3 {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #4097b2ed;
+        color: #A67D32;
         letter-spacing: 3px;
         text-align: center;
         padding: 10px; }
