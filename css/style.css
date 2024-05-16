@@ -9,7 +9,7 @@
   font-family: handlock;
   text-align: center;
   margin: 0 !important;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 2px;
   border-bottom: black solid 2px;
   text-decoration: none; }
@@ -185,13 +185,12 @@ header {
               background: #4097b2ed; }
   header marquee {
     font-family: handlock;
-    font-size: larger;
+    font-size: 18px;
     font-weight: lighter;
     letter-spacing: 5px;
     color: #fafafa;
     text-transform: uppercase;
-    margin: 0%;
-    padding-bottom: 10px; }
+    margin: 0%; }
 
 footer {
   position: static;
@@ -496,7 +495,7 @@ p {
         font-variant: small-caps; }
 
 .medios {
-  background-color: #4097b2ed; }
+  background-color: #b53e56; }
 
 /* Medios */
 .main-medios {
@@ -570,10 +569,13 @@ p {
   height: 40px; }
 
 .contacto {
-  background-color: #4bcbe8df; }
+  background-color: #197681; }
 
 .main-contacto {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
   .main-contacto .img-contacto {
     margin-top: 118px;
     width: 40%; }
@@ -581,17 +583,16 @@ p {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     align-items: center; }
     .main-contacto .div-contacto .contact-ig {
       display: flex;
-      height: 10%;
-      width: 50%;
+      width: 40%;
       border-radius: 10px;
       padding: 10px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       align-items: center;
-      margin-top: 10%; }
+      justify-content: center; }
       .main-contacto .div-contacto .contact-ig:hover {
         transform: scale(0.95);
         transition: 3s ease-in-out; }
@@ -610,24 +611,28 @@ p {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 12%;
-      margin-left: 20%; }
-      .main-contacto .div-contacto .contact-form form input {
-        width: 80%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 2px solid #4097b2;
-        border-radius: 4px; }
-      .main-contacto .div-contacto .contact-form input[type=submit],
-      .main-contacto .div-contacto .contact-form input[type=reset] {
-        background-color: #4097b2;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer; }
+      margin-top: 2%; }
+      .main-contacto .div-contacto .contact-form form {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .main-contacto .div-contacto .contact-form form input {
+          width: 100%;
+          padding: 5px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid #4097b2;
+          border-radius: 4px; }
+        .main-contacto .div-contacto .contact-form form input[type=submit],
+        .main-contacto .div-contacto .contact-form form input[type=reset] {
+          background-color: #4097b2;
+          width: 100%;
+          border: none;
+          color: white;
+          padding: 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer; }
 
 /*Responsive */
 /* Mobile last=> max-width  */
@@ -734,28 +739,32 @@ p {
     width: 300px;
     height: 130px;
     flex-direction: column; }
-  .main-contacto img {
-    display: none; }
-  .main-contacto .div-contacto {
-    width: 100%;
-    background-image: url("../resources/juanPiletaCielo.jpeg");
-    display: grid;
-    justify-items: center;
-    grid-template-areas: "logo-insta" "form-news "; }
-    .main-contacto .div-contacto .contact-ig {
-      height: auto;
-      width: auto;
-      grid-area: logo-insta; }
-      .main-contacto .div-contacto .contact-ig img {
-        display: flex; }
-    .main-contacto .div-contacto .contact-form {
-      grid-area: form-news; }
-      .main-contacto .div-contacto .contact-form p {
-        font-family: "Noto Sans Gurmukhi", sans-serif;
-        color: black;
-        font-size: 1em;
-        text-align: left;
-        text-decoration: none; }
+  .main-contacto {
+    min-height: 100vh; }
+    .main-contacto img {
+      display: none; }
+    .main-contacto .div-contacto {
+      margin-top: 145px;
+      width: 100%;
+      background-image: url("../resources/juanPiletaCielo.jpeg");
+      display: grid;
+      justify-items: center;
+      grid-template-areas: "logo-insta" "form-news "; }
+      .main-contacto .div-contacto .contact-ig {
+        height: auto;
+        width: auto;
+        grid-area: logo-insta; }
+        .main-contacto .div-contacto .contact-ig img {
+          display: flex; }
+      .main-contacto .div-contacto .contact-form {
+        margin-bottom: 5%;
+        grid-area: form-news; }
+        .main-contacto .div-contacto .contact-form p {
+          font-family: "Noto Sans Gurmukhi", sans-serif;
+          color: black;
+          font-size: 1em;
+          text-align: left;
+          text-decoration: none; }
   .main-agenda {
     display: flex; }
     .main-agenda .grid-agenda {
