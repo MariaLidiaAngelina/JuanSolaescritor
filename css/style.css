@@ -133,56 +133,58 @@ h2 {
   box-sizing: border-box;
   font-family: "Noto Sans Gurmukhi", sans-serif; }
 
-header nav .bg-body-tertiary {
-  --bs-bg-opacity: 1;
-  background-color: #4097b2 !important;
-  justify-content: space-evenly;
-  font-family: "Noto Sans Gurmukhi", sans-serif;
-  font-size: small; }
-  header nav .bg-body-tertiary div {
-    display: flex;
+header {
+  position: fixed;
+  width: 100%; }
+  header nav .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #4097b2 !important;
+    justify-content: space-evenly;
     font-family: "Noto Sans Gurmukhi", sans-serif;
-    justify-content: center; }
-    header nav .bg-body-tertiary div a {
-      text-decoration: none; }
-      header nav .bg-body-tertiary div a i {
-        font-size: 23px;
-        color: #ce9523; }
-    header nav .bg-body-tertiary div a:hover {
-      background-color: #7ed9ee !important;
-      border-radius: 10px; }
-    header nav .bg-body-tertiary div div {
+    font-size: small; }
+    header nav .bg-body-tertiary div {
+      display: flex;
+      font-family: "Noto Sans Gurmukhi", sans-serif;
       justify-content: center; }
-      header nav .bg-body-tertiary div div ul {
-        --bs-nav-link-padding-x: 0;
-        --bs-nav-link-padding-y: 0.1 5.5rem !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        list-style-type: none;
-        overflow: hidden;
-        background-color: #4097b2ed; }
-        header nav .bg-body-tertiary div div ul li {
-          float: left;
-          margin-left: 0px; }
-          header nav .bg-body-tertiary div div ul li a {
-            display: inline-block;
-            color: black;
-            text-align: center;
-            padding: 14px 0px;
-            text-decoration: none;
-            font-family: "Mulish", sans-serif;
-            font-size: small;
-            background: #4097b2ed; }
-
-header marquee {
-  font-family: handlock;
-  font-size: larger;
-  font-weight: lighter;
-  letter-spacing: 5px;
-  color: rgba(255, 245, 245, 0.9);
-  text-transform: uppercase; }
+      header nav .bg-body-tertiary div a {
+        text-decoration: none; }
+        header nav .bg-body-tertiary div a i {
+          font-size: 23px;
+          color: #ce9523; }
+      header nav .bg-body-tertiary div a:hover {
+        background-color: #7ed9ee !important;
+        border-radius: 10px; }
+      header nav .bg-body-tertiary div div {
+        justify-content: center; }
+        header nav .bg-body-tertiary div div ul {
+          --bs-nav-link-padding-x: 0;
+          --bs-nav-link-padding-y: 0.1 5.5rem !important;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          list-style-type: none;
+          overflow: hidden;
+          background-color: #4097b2ed; }
+          header nav .bg-body-tertiary div div ul li {
+            float: left;
+            margin-left: 0px; }
+            header nav .bg-body-tertiary div div ul li a {
+              display: inline-block;
+              color: black;
+              text-align: center;
+              padding: 14px 0px;
+              text-decoration: none;
+              font-family: "Mulish", sans-serif;
+              font-size: small;
+              background: #4097b2ed; }
+  header marquee {
+    font-family: handlock;
+    font-size: larger;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: rgba(255, 245, 245, 0.9);
+    text-transform: uppercase; }
 
 footer {
   position: static;
@@ -246,6 +248,7 @@ footer .lapicera {
   display: flex;
   flex-direction: column; }
   .main-inicio article {
+    margin-top: 150px;
     max-width: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -340,6 +343,7 @@ p {
 
 /* Grid libros por areas */
 .grid-libros {
+  margin-top: 150px;
   display: grid;
   width: 1200px;
   grid-template-areas: "libr1 libr2 libr2" "libr3 libr3 libr4" "libr5 libr6 libr6" "libr7 libr7 libr8" "libr9 libr0 libr0" "li8r1 li8r1 li8r2" "li8r3 li8r4 li8r4 ";
@@ -441,7 +445,8 @@ p {
     box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.534);
     border-radius: 10px;
     padding: 10px;
-    margin: 10px; }
+    margin: 10px;
+    margin-top: 150px; }
     .main-agenda .grid-agenda:hover {
       transform: scale(0.95);
       transition: 3s ease-in-out; }
@@ -505,6 +510,8 @@ p {
 .contiene-medios {
   width: 655px;
   flex-direction: row; }
+  .contiene-medios:first-child {
+    margin-top: 150px; }
   .contiene-medios:hover {
     transform: scale(0.95);
     transition: 3s ease-in-out; }
@@ -562,8 +569,10 @@ p {
 .main-contacto {
   display: flex; }
   .main-contacto .img-contacto {
+    margin-top: 118px;
     width: 40%; }
   .main-contacto .div-contacto {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     width: 40%;

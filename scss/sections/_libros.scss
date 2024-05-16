@@ -39,6 +39,7 @@ p{
 }
 /* Grid libros por areas */
 .grid-libros {
+    margin-top: 150px;
      display: grid;
     width: 1200px;
     grid-template-areas:
@@ -65,12 +66,14 @@ p{
     grid-area: libr2;
     padding: 20px;
     width: 310px;
+  
 }
 
 .libr3 {
     grid-area: libr3;
     padding: 20px;
     width: 310px;
+    
 }
 
 .libr4 {

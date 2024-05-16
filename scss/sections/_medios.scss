@@ -16,13 +16,19 @@
 }
 
 .main-medios div {
+   
     display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+     
 }
 
-.contiene-medios {width: 655px;
+.contiene-medios {
+    &:first-child{
+        margin-top: 150px;
+    }
+    width: 655px;
     flex-direction: row;
     &:hover{
         transform: scale(0.95);

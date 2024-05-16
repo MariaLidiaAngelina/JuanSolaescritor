@@ -21,11 +21,12 @@
     }
 
     .grid-agenda {
+       
         &:hover {
             transform: scale(0.95);
             transition: 3s ease-in-out;
         }
-
+        
         display: grid;
         grid-template-areas: "evento1 evento1 evento1"
         "evento2 evento3 evento3"
@@ -40,8 +41,9 @@
         border-radius: 10px;
         padding: 10px;
         margin: 10px;
-
+        margin-top: 150px;
         .evento-proximo {
+           
             grid-area: evento1;
             padding: 10px;
         }
