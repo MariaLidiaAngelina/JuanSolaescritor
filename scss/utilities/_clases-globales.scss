@@ -58,6 +58,7 @@ main {
   }
   .navbar>.container-fluid{
      font-family: "Noto Sans Gurmukhi", sans-serif;
+    
   }
   .bg-body-tertiary {
     --bs-bg-opacity: 1;
@@ -70,6 +71,7 @@ main {
     font-size: small;
     padding: 1px;
     display: flex;
+   position: absolute;
       }
   .container-fluid a:hover {
     background-color: #7ed9ee !important;

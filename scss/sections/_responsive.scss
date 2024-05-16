@@ -2,23 +2,36 @@
 /* Mobile last=> max-width  */
 /* Tablet */
 @media (max-width:875px) {
+    .navbar-brand {
+        font-size: small;
+        padding: 1px;
+        display: flex;
+       position: relative;
+          }
     .main-inicio article {
 
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
     }
+
     .presentacion {
         display: grid;
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
         justify-items: center;
         justify-content: center;
         align-items: center;
         overflow: hidden;
     }
 
-    .presentacion div img {
-        border-radius: 50%;
-        width: 70%;
-       margin-left: 7px;
+    .presentacion div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            border-radius: 50%;
+            width: 70%;
+            margin-left: 7px;
+            align-self: center;
+        }
     }
 
     .presentacion div p {
@@ -29,7 +42,8 @@
     .describe {
         width: auto;
     }
-    .acerca-de{
+
+    .acerca-de {
         max-width: auto;
         display: grid;
         grid-template-columns: 2fr;
@@ -38,33 +52,37 @@
         align-items: center;
         overflow: hidden;
         margin-top: 20px;
-        div{
-            display:grid;
+
+        div {
+            display: grid;
             justify-items: center;
-          
+
             h3 {
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 color: $patagonia;
                 letter-spacing: 3px;
                 text-align: center;
                 padding: 10px;
-               
-                
+
+
             }
-           img{
-            width: 250px;
-            height: 150px;
-            border-radius: 15px;
-           }
-                p { 
-                    justify-content: flex-start;
-                    margin: 5px;
-                    justify-content: flex-start;
-                    }
-                }
-            
-       
+
+            img {
+                width: 250px;
+                height: 150px;
+                border-radius: 15px;
+            }
+
+            p {
+                justify-content: flex-start;
+                margin: 5px;
+                justify-content: flex-start;
+            }
+        }
+
+
     }
+
     .venta {
         grid-template-columns: 1fr;
         align-items: center;
@@ -72,9 +90,10 @@
         justify-items: center;
     }
 }
+
 .eventos-past {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -83,10 +102,13 @@
     div {
         height: 250px;
         width: 255px;
-img{
-width: 150px;
-height: 200px; ;
-}
+
+        img {
+            width: 150px;
+            height: 200px;
+            ;
+        }
+
         a {
             text-decoration: none;
             font-family: $fuente-sinserifa;
@@ -96,6 +118,7 @@ height: 200px; ;
     }
 
 }
+
 /* Mobile */
 @media (max-width:655px) {
 
@@ -148,31 +171,33 @@ height: 200px; ;
 
     .main-contacto {
 
-        img{
+        img {
             display: none;
         }
-        
-        .div-contacto{
+
+        .div-contacto {
             width: 100%;
-        background-image: url("../resources/juanPiletaCielo.jpeg");
-        display: grid;
-        justify-items: center;
-        grid-template-areas:
-            "logo-insta"
-            "form-news ";
+            background-image: url("../resources/juanPiletaCielo.jpeg");
+            display: grid;
+            justify-items: center;
+            grid-template-areas:
+                "logo-insta"
+                "form-news ";
 
             .contact-ig {
-                img{
+                img {
                     display: flex;
                 }
+
                 height: auto;
                 width: auto;
                 grid-area: logo-insta;
-               
+
             }
-        
+
             .contact-form {
                 grid-area: form-news;
+
                 p {
                     font-family: $fuente-sinserifa;
                     color: black;
@@ -180,27 +205,32 @@ height: 200px; ;
                     text-align: left;
                     text-decoration: none;
                 }
-            
+
             }
-        
-            
-    }}
 
 
-.main-agenda {
-    display: flex;
-    .grid-agenda {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-        .ubicacion {
-            align-content: center;}
-        .fotoevento {
-            display: flex;
-            justify-content: center;
         }
     }
-}
+
+
+    .main-agenda {
+        display: flex;
+
+        .grid-agenda {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            align-items: center;
+            justify-content: center;
+
+            .ubicacion {
+                align-content: center;
+            }
+
+            .fotoevento {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }
