@@ -744,6 +744,7 @@ p {
     .main-contacto img {
       display: none; }
     .main-contacto .div-contacto {
+      padding-top: 20px;
       margin-top: 145px;
       width: 100%;
       background-image: url("../resources/juanPiletaCielo.jpeg");
