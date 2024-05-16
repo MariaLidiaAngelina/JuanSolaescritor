@@ -13,7 +13,7 @@
         max-width: auto;
         display: grid;
         grid-template-columns: 3fr 1fr;
-        justify-items: end;
+        justify-items: center;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -22,9 +22,11 @@
         img {
             border-radius: 50%;
             width: 500px;
-            justify-items: end;
-            box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
+          box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
             border: black solid 2px;
+            position: relative;
+            left: 140px;
+            z-index: 1;
            
         }
 

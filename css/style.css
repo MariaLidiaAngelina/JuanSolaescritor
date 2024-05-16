@@ -5,10 +5,10 @@
   font-family: handlock;
   src: url("../resources/typo/tomnr.ttf"); }
 
-.titulo-h1, header h1, .inicio h1, .libros h1, .agenda h1, .medios h1, .contacto h1 {
+.titulo-h1, .inicio h1, .libros h1, .agenda h1, .medios h1, .contacto h1 {
   font-family: handlock;
   text-align: center;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   font-size: 35px;
   letter-spacing: 2px;
   border-bottom: black solid 2px;
@@ -38,6 +38,9 @@ main {
   .tap-li:hover {
     transform: scale(0.95);
     transition: 3s ease-in-out; }
+  .tap-li:not(:hover) {
+    transform: scale(1);
+    transition: 3s ease; }
 
 .describe {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -105,7 +108,7 @@ li a {
   text-decoration: none;
   font-family: "Mulish", sans-serif;
   font-size: small;
-  background: #4097b2; }
+  background: #4097b2ed; }
 
 li a:hover {
   background-color: #4bcbe8; }
@@ -136,7 +139,8 @@ h2 {
 
 header {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 3; }
   header nav .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background-color: #4097b2 !important;
@@ -185,7 +189,9 @@ header {
     font-weight: lighter;
     letter-spacing: 5px;
     color: #fafafa;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0%;
+    padding-bottom: 10px; }
 
 footer {
   position: static;
@@ -253,16 +259,18 @@ footer .lapicera {
     max-width: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    justify-items: end;
+    justify-items: center;
     justify-content: center;
     align-items: center;
     overflow: hidden; }
     .main-inicio article img {
       border-radius: 50%;
       width: 500px;
-      justify-items: end;
       box-shadow: 2px 3px 5px 5px rgba(128, 128, 128, 0.534);
-      border: black solid 2px; }
+      border: black solid 2px;
+      position: relative;
+      left: 140px;
+      z-index: 1; }
     .main-inicio article div p {
       margin: 5px;
       justify-content: flex-start; }
@@ -513,6 +521,9 @@ p {
   .contiene-medios:hover {
     transform: scale(0.95);
     transition: 3s ease-in-out; }
+  .contiene-medios:not(:hover) {
+    transform: scale(1);
+    transition: 3s ease; }
 
 .contiene-medios div {
   align-content: center;
@@ -554,9 +565,6 @@ p {
   margin-bottom: 0; }
 
 /* Contacto */
-.contacto {
-  background-color: #4bcbe8df; }
-
 .logoinsta {
   width: 40px;
   height: 40px; }
@@ -587,6 +595,9 @@ p {
       .main-contacto .div-contacto .contact-ig:hover {
         transform: scale(0.95);
         transition: 3s ease-in-out; }
+      .main-contacto .div-contacto .contact-ig:not(:hover) {
+        transform: scale(1);
+        transition: 3s ease; }
       .main-contacto .div-contacto .contact-ig a {
         font-family: "Noto Sans Gurmukhi", sans-serif;
         color: black;

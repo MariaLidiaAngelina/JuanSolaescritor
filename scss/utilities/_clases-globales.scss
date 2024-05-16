@@ -1,7 +1,7 @@
 .titulo-h1 {
     font-family: $fuente-serifada;
     text-align: center;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
     font-size: 35px;
     letter-spacing: 2px;
     border-bottom: black solid 2px;
@@ -37,6 +37,10 @@ main {
     &:hover {
         transform: scale(0.95);
         transition: 3s ease-in-out;
+    }
+    &:not(:hover){
+        transform: scale(1.0);
+        transition: 3s ease;
     }
 }
 
@@ -114,7 +118,7 @@ li a {
     text-decoration: none;
     font-family: "Mulish", sans-serif;
     font-size: small;
-    background: #4097b2;
+    background: #4097b2ed;
 }
 
 li a:hover {

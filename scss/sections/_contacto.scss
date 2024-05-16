@@ -1,8 +1,6 @@
 /* Contacto */
 .contacto {
-    background-color: $lago;
-
-    h1 {
+     h1 {
         @extend .titulo-h1
     }
 }
@@ -13,7 +11,7 @@
 }
 
 .contacto {
-    background-color: $lago;
+    background-color: $lago ;
 }
 
 .main-contacto {
@@ -38,6 +36,9 @@
     transform: scale(0.95);
         transition: 3s ease-in-out;
 }
+&:not(:hover){
+    transform: scale(1.0);
+    transition: 3s ease;}
             a {
                 font-family: $fuente-sinserifa;
                 color: black;

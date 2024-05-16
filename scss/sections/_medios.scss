@@ -34,7 +34,9 @@
         transform: scale(0.95);
         transition: 3s ease-in-out;
     }
-   
+    &:not(:hover){
+        transform: scale(1.0);
+        transition: 3s ease;}
 }
 
 .contiene-medios div { align-content: center;
