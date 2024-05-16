@@ -461,20 +461,25 @@ p {
       grid-area: evento4; }
       .main-agenda .grid-agenda .mapaevento iframe {
         border-radius: 10px; }
-  .main-agenda .eventos-pasados {
+  .main-agenda .eventos-pasado {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: center; }
-    .main-agenda .eventos-pasados div {
-      height: 250px;
-      width: 255px; }
-      .main-agenda .eventos-pasados div img {
-        width: 150px;
+    align-items: center;
+    overflow: hidden; }
+    .main-agenda .eventos-pasado div {
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      width: 255px;
+      align-items: center;
+      margin: 10px; }
+      .main-agenda .eventos-pasado div img {
+        width: auto;
         height: 200px; }
-      .main-agenda .eventos-pasados div a {
+      .main-agenda .eventos-pasado div a {
         text-decoration: none;
         font-family: "Noto Sans Gurmukhi", sans-serif;
         font-variant: small-caps; }
@@ -648,7 +653,8 @@ p {
         padding: 10px; }
       .acerca-de div img {
         width: 250px;
-        height: 150px; }
+        height: 150px;
+        border-radius: 15px; }
       .acerca-de div p {
         justify-content: flex-start;
         margin: 5px;
@@ -658,6 +664,24 @@ p {
     align-items: center;
     justify-content: center;
     justify-items: center; } }
+
+.eventos-past {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .eventos-past div {
+    height: 250px;
+    width: 255px; }
+    .eventos-past div img {
+      width: 150px;
+      height: 200px; }
+    .eventos-past div a {
+      text-decoration: none;
+      font-family: "Noto Sans Gurmukhi", sans-serif;
+      font-variant: small-caps; }
 
 /* Mobile */
 @media (max-width: 655px) {

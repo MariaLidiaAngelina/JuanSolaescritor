@@ -71,21 +71,29 @@
 
     }
 
-    .eventos-pasados {
+    .eventos-pasado {
         display: flex;
-        flex-direction:column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         div {
-            height: 250px;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
             width: 255px;
-img{
-    width: 150px;
-    height: 200px; ;
-}
+            align-items: center;
+            margin: 10px;
+
+            img {
+                width: auto;
+                height:200px;
+                ;
+            }
+
             a {
                 text-decoration: none;
                 font-family: $fuente-sinserifa;
@@ -93,6 +101,4 @@ img{
 
             }
         }
-
-    }
-}
+    }}
