@@ -1,6 +1,13 @@
 /*Responsive */
 /* Mobile last=> max-width  */
 /* Tablet */
+@media (max-width:992px){
+    .navbar-brand {
+        font-size: small;
+        padding: 1px;
+        display: flex;
+        position: relative;
+}}
 @media (max-width:875px) {
     .navbar-brand {
         font-size: small;
