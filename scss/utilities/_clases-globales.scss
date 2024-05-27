@@ -39,7 +39,7 @@ main {
         transition: 3s ease-in-out;
     }
     &:not(:hover){
-        transform: scale(1.0);
+        transform: scale(1.05);
         transition: 3s ease;
     }
 }

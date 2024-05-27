@@ -39,7 +39,7 @@ main {
     transform: scale(0.95);
     transition: 3s ease-in-out; }
   .tap-li:not(:hover) {
-    transform: scale(1);
+    transform: scale(1.05);
     transition: 3s ease; }
 
 .describe {
@@ -342,6 +342,9 @@ h4 {
 .tap-li img {
   height: 250px;
   margin: 10px; }
+  .tap-li img:hover {
+    transform: scale(1.25);
+    transition: 3s ease-in-out; }
 
 p {
   margin-bottom: 0; }
